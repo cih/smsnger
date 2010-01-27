@@ -25,11 +25,11 @@ etc.
 
 == Setup Instructions
 
-Add this this one line to the file you want to be able to use SMS Fu in.
+To use SMSnger, first require the library:
 
     require 'smsnger'
 
-Once the library is required, you need to run a setup like so:
+Once the library is required, you need to run the setup like so:
 
     SMSnger.setup(:from => "someone@example.com")
     
