@@ -1,7 +1,20 @@
 require 'helper'
 
-class TestSmsnger < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+class SmsFuTest < Test::Unit::TestCase
+  def test_validity_of_number
+    assert_raise(SMSngerException) { SMSnger.deliver_sms("456789011","AT&T","Message") }
+    assert_equal("5555555555@txt.att.net", SMSnger.get_sms_address("1-555-555-5555","AT&T"))
+  end
+
+  def test_international_number
+    assert_equal("+445555555555@txt.att.net", SMSnger.get_sms_address("+44-555-555-5555","AT&T"))
+  end
+  
+  def test_handling_of_blank_message
+    assert_raise(SMSngerException) { SMSnger.deliver_sms("1234567890","AT&T","") }
+  end
+
+  def test_get_sms_address
+    assert_equal("1234567890@txt.att.net", SMSnger.get_sms_address("1234567890","AT&T"))
   end
 end
