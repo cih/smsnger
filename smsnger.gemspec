@@ -18,9 +18,13 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "MIT-LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION",
+     "lib/carriers.yml",
      "lib/smsnger.rb",
+     "smsnger.gemspec",
      "test/helper.rb",
      "test/test_smsnger.rb"
   ]

@@ -67,7 +67,7 @@ That's it!  Now you're good to go.
     Verizon Wireless  =>  "verizon"
     Vodafone Tokyo    =>  "vodafone-jp-tokyo"
 
-* <b>Check sms_fu.yml for a complete list of supported carriers, including international
+* <b>Check lib/carriers.yml for a complete list of supported carriers, including international
   carriers as well.</b>
 
     SMSnger.deliver_sms("5558675309","at&t","message")
