@@ -93,4 +93,5 @@ A big thank you to Brendan G. Lim, the original author of SMS Fu, who inspired t
 of this gem and who did most of the heavy-lifting.
 
 Copyright (c) 2010 Joel Watson, released under the MIT license
+
 (Large) Portions Copyright (c) 2008 Brendan G. Lim, Intridea, Inc., released under the MIT license
